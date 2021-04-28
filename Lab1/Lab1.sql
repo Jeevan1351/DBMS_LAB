@@ -44,7 +44,7 @@ create table participated(Driver_id varchar(10), Reg_no varchar(10), Report_no i
  update participated set damage_amt = 25000
  where report_no = 12;
  select count(*) from Accident where adate like '10-12-02'; 
- SELECT COUNT(A.REPORT_NO)
+ SELECT *
 FROM ACCIDENT A, PARTICIPATED P, CAR C
 WHERE A.REPORT_NO=P.REPORT_NO
 AND
