@@ -67,5 +67,6 @@ select order_no from shipment where wr_no = 1;
 
 delete from items where item_no = 5005;
 select * from order_item;
+ 
 
 SELECT C.CNAME,COUNT(O.ORDER_no) AS TOTALORDERS,AVG(O.ORdAMt) AS AVG_ORDER_AMT FROM CUSTOMER C,ORDERS O WHERE C.CUST_no=O.CUST_no GROUP BY O.CUST_no;
